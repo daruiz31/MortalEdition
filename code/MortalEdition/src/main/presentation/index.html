@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="../../../res/css/menu.css">
 	<link rel="stylesheet" href="../../../res/css/style.css">
 	<link rel="stylesheet" href="../../../res/css/simpleModal.css">
+	<link rel="stylesheet" href="../../../res/css/colors.css">
 </head>
 <body>
 	<div class="all">
@@ -23,7 +24,7 @@
 		</div>
 		<div class="center">
 			<div class="explainer"><span>Mortal Edition</span></div>
-			<div class="text"><a class="js-open-modal" href="#" data-modal-id="popup"> Sign in </a></div>
+			<div class="text"><a class="js-open-modal" href="#" data-modal-id="popup"> Join </a></div>
 		</div>
 		<div class="right">
 			<div class="text"><a href="forum.html">Forum</a></div>
@@ -36,10 +37,30 @@
 	<div id="popup" class="modal-box">  
 		<header>
 			<a href="#" class="js-modal-close close">×</a>
-			<h3>Modal Title</h3>
+			<h3>Sign in</h3>
+			<p id="lbl_forgotpass">Forgot your password? <a id="orange" href="">Click Here!</a></u></p>
 		</header>
 		<div class="modal-body">
-			<p>Modal Body</p>
+			<p>
+				<form method="post" action="index.html">
+					<div class="box">							
+						<input type="email" name="email" placeholder="Email" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" />						
+						<input type="password" name="email" placeholder="Password" onFocus="field_focus(this, 'email');" onblur="field_blur(this, 'email');" class="email" />
+
+						<a href="#"><div class="btn_login">Sign In</div></a>
+
+						<a href="#"><div class="btn_register">Sign Up</div></a>	
+
+						<a href="#"><div class="btn_signup" id="btn_facebook"></div> </a>
+
+						<a href="#"><div class="btn_signup" id="btn_google"></div> </a>
+
+					</div>
+				</form>				
+
+				
+
+			</p>
 		</div>
 		<footer>
 			<a href="#" class="js-modal-close">Close Button</a>
